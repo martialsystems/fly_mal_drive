@@ -1,0 +1,22 @@
+{
+  "runtime_checks": [
+    {
+      "id": "unit-tests",
+      "argv": [".venv/bin/python", "-m", "pytest", "tests/", "-q"],
+      "timeout_s": 180,
+      "paths": [
+        "src/**",
+        "tests/**",
+        "scripts/**",
+        "data/**",
+        "logs/**",
+        "README.md",
+        "AGENTS.md",
+        "NEXT.md",
+        "description.txt",
+        "pyproject.toml",
+        "vbd.runtime.json"
+      ]
+    }
+  ]
+}

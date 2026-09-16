@@ -1,0 +1,174 @@
+{
+  "schema": "fly_mal_drive.v1",
+  "question": "Does cVA (DA1 or LH intermediates) synapse onto the mAL IDs that make the -8810?",
+  "honesty": "Count only. DA1 PNs and type-LH hop-1 onto the 93 mAL GABA presynapses that make -8810 onto 88 pC1 coexpress. Not hop-3. Not an Icarus battery. Parent fly_p1_mal @e16856c holds those 8810.",
+  "n_P1": 88,
+  "n_mal_gaba_pre": 93,
+  "mal_gaba_onto_p1": 8810,
+  "da1_hop1_weight": 45,
+  "da1_hop1_n_post": 1,
+  "da1_hop1_gaba_onto_p1": 3,
+  "lh_hop1_weight": 8148,
+  "lh_hop1_n_post": 93,
+  "da1_driven_lh_n": 161,
+  "da1_driven_lh_to_mal_weight": 3301,
+  "da1_driven_lh_n_mal": 90,
+  "da1_driven_lh_gaba_onto_p1": 8773,
+  "hop": "DA1_PN -> type-LH -> mAL_GABA_pre",
+  "present_at_hop2": true,
+  "fold_illegal": false,
+  "drive": {
+    "dataset": "male-cns:v1.0",
+    "weights": "significant-only",
+    "kind": "hop1_da1_or_lh_onto_mal_gaba_ids",
+    "question": "Does cVA (DA1 or LH intermediates) synapse onto the mAL IDs that make the -8810?",
+    "P1_definition": "type pC1_* and fruDsx coexpress_*",
+    "mAL_definition": "type startswith mAL",
+    "mAL_gaba": "pre consensus_nt gaba onto the 88",
+    "LH_definition": "type startswith LH",
+    "n_P1": 88,
+    "n_mAL": 159,
+    "n_DA1_PN": 15,
+    "n_LH": 2028,
+    "n_LH_types": 422,
+    "n_mal_gaba_pre": 93,
+    "mal_gaba_onto_p1": 8810,
+    "parent": {
+      "repo": "fly_p1_mal",
+      "numbers_sha": "e16856c",
+      "sentence_sha": "41437dc",
+      "sign_sha": "45aa064"
+    },
+    "hops": {
+      "DA1_PN_to_mal_gaba_ids": {
+        "n_edges": 5,
+        "weight": 45,
+        "n_pre": 5,
+        "n_post": 1,
+        "nt": {
+          "acetylcholine": 45
+        }
+      },
+      "LH_to_mal_gaba_ids": {
+        "n_edges": 1265,
+        "weight": 8148,
+        "n_pre": 382,
+        "n_post": 93,
+        "nt": {
+          "acetylcholine": 2755,
+          "gaba": 5192,
+          "glutamate": 196,
+          "unclear": 5
+        }
+      },
+      "DA1_PN_to_LH": {
+        "n_edges": 1757,
+        "weight": 17582,
+        "n_pre": 15,
+        "n_post": 616,
+        "nt": {
+          "acetylcholine": 15834,
+          "gaba": 1748
+        }
+      },
+      "DA1_PN_to_LH_that_hit_mal_gaba": {
+        "n_edges": 573,
+        "weight": 8425,
+        "n_pre": 15,
+        "n_post": 161,
+        "nt": {
+          "acetylcholine": 8140,
+          "gaba": 285
+        }
+      },
+      "DA1_driven_LH_to_mal_gaba_ids": {
+        "n_edges": 712,
+        "weight": 3301,
+        "n_pre": 161,
+        "n_post": 90,
+        "nt": {
+          "acetylcholine": 859,
+          "gaba": 2386,
+          "glutamate": 55,
+          "unclear": 1
+        }
+      }
+    },
+    "da1_hop1_hit": {
+      "cells": [
+        {
+          "bodyId": 11741,
+          "type": "mALB1",
+          "gaba_onto_p1": 3
+        }
+      ],
+      "gaba_onto_p1": 3
+    },
+    "lh_hop1_hit": {
+      "n_mal_gaba_ids": 93,
+      "gaba_onto_p1": 8810
+    },
+    "da1_via_lh": {
+      "n_lh_hitters": 382,
+      "n_da1_driven_lh_hitters": 161,
+      "n_mal_gaba_ids": 90,
+      "gaba_onto_p1": 8773,
+      "top_lh_types": [
+        {
+          "type": "LHAV4c2",
+          "weight": 1012
+        },
+        {
+          "type": "LH007m",
+          "weight": 814
+        },
+        {
+          "type": "LH008m",
+          "weight": 360
+        },
+        {
+          "type": "LHAV4c1",
+          "weight": 231
+        },
+        {
+          "type": "LH004m",
+          "weight": 198
+        },
+        {
+          "type": "LH003m",
+          "weight": 170
+        },
+        {
+          "type": "LH001m",
+          "weight": 125
+        },
+        {
+          "type": "LHPV2a1_c",
+          "weight": 77
+        },
+        {
+          "type": "LHAV2b2_a",
+          "weight": 69
+        },
+        {
+          "type": "LH002m",
+          "weight": 24
+        },
+        {
+          "type": "LHAV2b5",
+          "weight": 21
+        },
+        {
+          "type": "LHAD1g1",
+          "weight": 14
+        }
+      ]
+    },
+    "hop": "DA1_PN -> type-LH -> mAL_GABA_pre",
+    "present_at_hop2": true,
+    "fold_illegal": false,
+    "gaba_undriven_by_da1_lh": 37
+  },
+  "parent_female_n": 139255,
+  "parent_male_n": 166691
+}

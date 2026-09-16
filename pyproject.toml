@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fly-mal-drive"
+version = "0.1.0"
+description = "Does cVA (DA1 or LH intermediates) synapse onto the mAL IDs that make the -8810?"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Martial Systems LLC" }]
+dependencies = ["pandas>=2.0", "pyarrow>=14"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+fly-mal-drive = "fly_mal_drive.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]

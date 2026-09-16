@@ -1,0 +1,1 @@
+Does cVA (DA1 or LH intermediates) synapse onto the mAL IDs that make the -8810? Yes at hop-2. DA1 hop-1 is 3 of 8810. DA1-driven type-LH accounts for 8773 of 8810. Hop: DA1_PN -> type-LH -> mAL_GABA_pre.
