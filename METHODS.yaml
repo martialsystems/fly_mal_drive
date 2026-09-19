@@ -1,0 +1,16 @@
+question: Does cVA (DA1 or LH intermediates) synapse onto the mAL IDs that make the -8810?
+falsifier: DA1 does not reach those mAL IDs at hop-1 or hop-2
+object: connectome measurement
+status: Closed
+system: 93 mAL GABA IDs; 161 type-LH; MaleCNS v1.0
+data_version: MaleCNS v1.0 hop counts
+neuron_table: IDs frozen into child fly_lh_frac data/frozen/ids.json
+dynamics: count extract; no LIF
+rng: extract lock
+n_seeds: 1
+n_meaning: 1 extract
+locked_metric: DA1 hop-1 is 3 of 8810; type-LH 8773 of 8810; science_lock de95257
+pre_specified: false
+science_lock: de95257
+parent_sha: "e16856c"
+reduction: "DA1-driven means any DA1 synapse (f_i > 0)"

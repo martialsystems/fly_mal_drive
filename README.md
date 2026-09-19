@@ -19,6 +19,20 @@ DA1-driven LH types onto those IDs, top weights: LHAV4c2 1012, LH007m 814, LH008
 
 Female template count: FlyWire 139,255. Male template count: MaleCNS 166,691.
 
+## Methods card
+
+Copied from `METHODS.yaml`.
+
+| Field | Value |
+|-------|-------|
+| Object | connectome measurement |
+| Status | Closed |
+| Falsifier | DA1 does not reach those mAL IDs at hop-1 or hop-2 |
+| n / seeds | 1 extract |
+| Science lock | `de95257` |
+| Pre-specified | false |
+
+
 ## How to run
 
 ```
@@ -35,6 +49,8 @@ Do not overwrite `logs/drive_s1.json` once locked. Do not run Icarus rows in thi
 | `scripts/extract_drive.py` | The count |
 | `data/templates/drive.json` | Raw hop tables |
 | `logs/drive_s1.json` | Locked count |
+| `METHODS.yaml` | Methods card |
+| `CITATION.cff` | Citation file; DOI empty until a deposit exists |
 | `AGENTS.md` | Project rules and VBD |
 | `NEXT.md` | Closed. Hop written. |
 | `THIRD_PARTY.md` | Connectome attribution |

@@ -53,3 +53,14 @@ def test_lock_numbers_in_readme() -> None:
     assert "This tree is closed" in next_text
     assert "No Icarus rows" in next_text
     assert scan_text(next_text) == []
+
+
+def test_methods_card_and_citation() -> None:
+    methods = (REPO / "METHODS.yaml").read_text(encoding="utf-8")
+    assert "science_lock:" in methods
+    assert "pre_specified: false" in methods
+    assert "—" not in methods
+    assert "What it is not" not in methods
+    cite = (REPO / "CITATION.cff").read_text(encoding="utf-8")
+    assert "cff-version: 1.2.0" in cite
+    assert "Martial Systems LLC" in cite
